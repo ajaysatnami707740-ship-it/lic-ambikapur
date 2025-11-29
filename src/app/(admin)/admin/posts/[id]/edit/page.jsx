@@ -1,12 +1,10 @@
 "use client";
-export const dynamic = "force-dynamic";
-export const ssr = false;
+
 import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import PostForm from "@/components/ui/admin/PostForm";
 import { apiRequest } from "@/lib/api";
 import { toast } from "sonner";
-
 
 export default function EditPostPage() {
   const { id } = useParams();
@@ -48,7 +46,7 @@ export default function EditPostPage() {
   return (
     <div className="p-6 max-w-5xl mx-auto">
       <h2 className="text-2xl font-semibold text-rose-600 mb-4">Edit Post</h2>
-      
+      <PostForm initialData={post} onSubmit={handleUpdate} />
     </div>
   );
 }

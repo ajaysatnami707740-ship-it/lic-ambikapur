@@ -44,7 +44,7 @@ const Navbar = () => {
             <span className="text-sm font-bold text-white">AS</span>
           </div>
           <div className="leading-tight">
-            <div className="text-lg font-semibold text-[#1A1A1A]">lic ambikapur</div>
+            <div className="text-lg font-semibold text-[#1A1A1A]">Lic Ambikapur</div>
             <div className="text-xs text-[#6F7787]">Ajay Satnami - Development Officer</div>
           </div>
         </Link>
@@ -107,7 +107,7 @@ const Navbar = () => {
                 <span className="text-xs font-semibold text-white">AS</span>
               </div>
               <div>
-                <div className="text-base font-semibold text-[#1A1A1A]">lic ambikapur</div>
+                <div className="text-base font-semibold text-[#1A1A1A]">Lic Ambikapur</div>
                 <div className="text-xs text-[#6F7787]">Ajay Satnami</div>
               </div>
             </div>

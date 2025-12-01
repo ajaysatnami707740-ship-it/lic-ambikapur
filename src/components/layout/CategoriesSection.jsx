@@ -35,19 +35,20 @@ export default async function CategoriesSection() {
         grid-cols-2 
         sm:grid-cols-3 
         md:grid-cols-4 
-        lg:grid-cols-6">
+        lg:grid-cols-6"
+      >
         {categories.map((cat) => (
           <Link
             key={cat._id}
             href={`/category/${cat.slug}`}
             prefetch={false}
-            className="block rounded-xl px-4 py-3 
-              bg-rose-50 text-rose-700 font-medium text-center 
+            className="block rounded-lg px-3 py-2
+              bg-gradient-to-tr from-blue-50 via-white to-yellow-50
+              text-blue-800 font-medium text-center
               shadow-sm 
-              hover:bg-rose-100 
-              hover:-translate-y-1 
-              hover:shadow-md 
-              transition-all duration-200 
+              hover:shadow-md
+              hover:-translate-y-1
+              transition-transform duration-300
               will-change-transform"
           >
             {cat.name}

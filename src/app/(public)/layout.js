@@ -14,76 +14,72 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://truefeelings.in"),
+  metadataBase: new URL("https://licambikapur.com"),
 
   title: {
-    default: "True Feelings – Love Advice, Breakup Healing & Relationship Tips",
-    template: "%s | True Feelings"
+    default: "LIC Ambikapur – LIC Plans, Policy Guides & Insurance Advice",
+    template: "%s | LIC Ambikapur",
   },
 
   description:
-    "Get real love advice, breakup healing guides, dating tips, emotional support, and self-love motivation. True Feelings helps you build healthy relationships and heal with clarity.",
+    "Discover the latest LIC plans, policy guides, and insurance advice from LIC Ambikapur (Ajay Satnami). Get expert insights on LIC term plans, child plans, pension schemes, health insurance, and financial planning.",
 
   keywords: [
-    "relationship advice",
-    "love tips",
-    "breakup healing",
-    "self love",
-    "dating tips",
-    "communication in relationships",
-    "how to move on",
+    "LIC plans",
+    "LIC Ambikapur",
+    "LIC term insurance",
+    "LIC child plan",
+    "LIC pension plan",
+    "LIC health insurance",
+    "LIC premium calculator",
+    "LIC agent career",
+    "LIC policy guides",
+    "insurance tips",
   ],
 
-  // Canonical URL
   alternates: {
-    canonical: "https://truefeelings.in",
+    canonical: "https://licambikapur.com",
   },
 
-  // Social Sharing OG Tags
   openGraph: {
-    title: "True Feelings – Love Advice & Breakup Healing",
+    title: "LIC Ambikapur – Expert LIC Plans & Insurance Guidance",
     description:
-      "Find emotional healing, relationship guidance, and love tips that truly help.",
-    url: "https://truefeelings.in",
-    siteName: "True Feelings",
+      "Get detailed guides and advice on LIC plans including term, child, pension, and health insurance. LIC Ambikapur helps you choose the best LIC plan for your needs.",
+    url: "https://licambikapur.com",
+    siteName: "LIC Ambikapur",
     type: "website",
     images: [
       {
-        url: "https://truefeelings.in/og-image.jpg",
+        url: "https://licambikapur.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "True Feelings – Love & Relationship Guidance",
+        alt: "LIC Ambikapur – LIC Plans & Policy Guidance",
       },
     ],
   },
 
-  // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "True Feelings – Love & Relationship Support",
+    title: "LIC Ambikapur – LIC Plans & Insurance Tips",
     description:
-      "Honest love advice, breakup recovery, and emotional healing articles.",
-    images: ["https://truefeelings.in/og-image.jpg"],
-    creator: "@truefeelings",
+      "Explore LIC term plans, child plans, pension schemes, health insurance, and expert policy guidance from LIC Ambikapur.",
+    images: ["https://licambikapur.com/og-image.jpg"],
+    creator: "@licambikapur",
   },
 
-  // Icons
   icons: {
     icon: "/icons/favicon.ico",
     shortcut: "/icons/favicon.ico",
     apple: "/icons/apple-touch-icon.png",
   },
 
-  // Manifest (PWA optional)
   manifest: "/manifest.json",
 
-  // Verification (optional—fill actual values)
-  verification: {
-    google: "YOUR_GOOGLE_VERIFICATION_CODE",
-    bing: "YOUR_BING_VERIFICATION_CODE",
-  },
+  // verification: {
+  //   google: "YOUR_GOOGLE_VERIFICATION_CODE",
+  //   bing: "YOUR_BING_VERIFICATION_CODE",
+  // },
 
-  // Other SEO
   robots: {
     index: true,
     follow: true,

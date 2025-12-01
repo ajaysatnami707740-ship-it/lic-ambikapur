@@ -7,13 +7,13 @@ export const dynamic = "force-dynamic";
 
 // ✅ SEO Metadata for All Blogs Page
 export const metadata = {
-  title: "All Blog Posts – Latest Articles, Guides & Stories",
+  title: "LIC Ambikapur Blog – Updates & Guides by Ajay Satnami",
   description:
-    "Explore all blog posts including guides, tips, stories, and the latest updates across multiple categories. Browse fresh content updated daily.",
+    "Explore latest LIC policies, agent tips, and financial guidance by Ajay Satnami, LIC Development Officer in Ambikapur.",
   openGraph: {
-    title: "All Blog Posts – Latest Articles, Guides & Stories",
+    title: "LIC Ambikapur Blog – Updates & Guides by Ajay Satnami",
     description:
-      "Explore all blog posts including guides, tips, stories, and the latest updates across multiple categories.",
+      "Explore latest LIC policies, agent tips, and financial guidance by Ajay Satnami, LIC Development Officer in Ambikapur.",
     url: "/blog",
     type: "website",
   },
@@ -24,9 +24,9 @@ export default async function AllPostsPage({ searchParams }) {
   let total = 0;
 
   try {
-    const res = await apiRequest(`${process.env.NEXT_PUBLIC_API_URL}/api/posts?page=1&limit=50`);
-
-
+    const res = await apiRequest(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/posts?page=1&limit=50`
+    );
     posts = res.data;
     total = res.total;
   } catch (err) {
@@ -34,18 +34,17 @@ export default async function AllPostsPage({ searchParams }) {
   }
 
   return (
-    <div className="bg-rose-100">
+    <div className="bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-24">
         
-        {/* ⭐ SEO Headline */}
+        {/* SEO Headline */}
         <h1 className="text-4xl font-extrabold text-gray-900 mb-4 text-center sm:text-left">
-          All Blog Posts & Latest Stories
+          All LIC Ambikapur Updates & Articles
         </h1>
 
-        {/* ⭐ SEO supporting text */}
+        {/* Supporting text */}
         <p className="text-gray-700 max-w-2xl mb-12 text-center sm:text-left">
-          Browse all our latest blog posts, guides, tips, and trending stories. 
-          Updated daily with fresh and high-quality content across multiple categories.
+          Stay updated with LIC policies, insurance tips, financial guidance, and exclusive insights from Ajay Satnami, LIC Development Officer, Ambikapur.
         </p>
 
         {posts.length === 0 ? (
@@ -56,17 +55,17 @@ export default async function AllPostsPage({ searchParams }) {
               <Link
                 key={post._id}
                 href={`/blog/${post.slug}`}
-                className="group block overflow-hidden rounded-3xl bg-gradient-to-tr from-rose-50 to-purple-50 shadow-sm border border-rose-100 hover:shadow-2xl hover:scale-105 transition-transform duration-300"
+                className="group block overflow-hidden rounded-3xl bg-gradient-to-tr from-blue-50 via-white to-yellow-50 shadow-md border border-gray-100 hover:shadow-2xl hover:scale-105 transition-transform duration-300"
                 prefetch={true}
               >
                 {/* Cover Image */}
-                <div className="relative w-full h-64">
+                <div className="relative w-full h-64 overflow-hidden rounded-t-3xl">
                   <Image
                     src={post.coverImage || "/placeholder.png"}
                     alt={post.title}
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority
                   />
                 </div>
@@ -77,7 +76,7 @@ export default async function AllPostsPage({ searchParams }) {
                     {post.categories?.map((cat) => (
                       <span
                         key={cat._id}
-                        className="text-xs px-3 py-1 rounded-full bg-rose-100 text-rose-700 font-medium"
+                        className="text-xs px-3 py-1 rounded-full bg-blue-100 text-blue-800 font-medium"
                       >
                         {cat.name}
                       </span>
@@ -85,12 +84,12 @@ export default async function AllPostsPage({ searchParams }) {
                   </div>
 
                   {/* Title */}
-                  <h2 className="text-lg font-bold text-gray-900 leading-snug group-hover:text-rose-500 transition-colors duration-300">
+                  <h2 className="text-lg font-bold text-gray-900 leading-snug group-hover:text-blue-600 transition-colors duration-300">
                     {post.title}
                   </h2>
 
                   {/* Excerpt */}
-                  <p className="text-gray-600 mt-3 text-sm line-clamp-3">
+                  <p className="text-gray-700 mt-3 text-sm line-clamp-3">
                     {post.excerpt}
                   </p>
 

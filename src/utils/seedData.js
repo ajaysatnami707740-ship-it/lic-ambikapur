@@ -1,133 +1,135 @@
 export const categoriesSeed = [
   { 
-    name: "Relationship Advice",
-    slug: "relationship-advice",
-    title: "Relationship Advice – Improve Communication & Build Strong Love",
-    description: "Trusted relationship advice, emotional guidance, and communication techniques to build a healthy and lasting relationship.",
-    keywords: ["relationship advice", "relationship help", "love tips", "how to fix relationship", "communication tips"]
+    name: "LIC Policy Guides",
+    slug: "lic-policy-guides",
+    title: "LIC Policy Guides – Benefits, Eligibility & Complete Plan Details",
+    description: "Deep-dive guides on all major LIC policies with premium details, maturity benefits, eligibility, riders, and policy comparisons.",
+    keywords: ["lic policy guide", "lic policy details", "best lic policy", "lic plan benefits", "lic policy list"]
   },
   { 
-    name: "Dating & Attraction",
-    slug: "dating-attraction",
-    title: "Dating & Attraction – Modern Dating Tips & Attraction Psychology",
-    description: "Dating tips, attraction psychology, first date guides, and strategies to build chemistry and interest.",
-    keywords: ["dating tips", "attraction psychology", "first date ideas", "flirting tips", "how to attract someone"]
+    name: "LIC Term Insurance",
+    slug: "lic-term-insurance",
+    title: "LIC Term Insurance – High Life Cover, Low Premium Plans",
+    description: "Complete insights on LIC term insurance including premium chart, claim ratio, features, and comparison with other plans.",
+    keywords: ["lic term insurance", "best lic term plan", "lic jeevan amar", "term plan lic", "low premium lic term"]
   },
   { 
-    name: "Healing & Heartbreak",
-    slug: "healing-heartbreak",
-    title: "Healing & Heartbreak – Breakup Recovery & Emotional Healing",
-    description: "Guides for breakup healing, emotional recovery, rebuilding confidence, and starting fresh after heartbreak.",
-    keywords: ["breakup healing", "heartbreak tips", "move on guide", "emotional recovery", "self love after breakup"]
+    name: "Savings & Investment Plans",
+    slug: "savings-investment-plans",
+    title: "Savings & Investment Plans – Guaranteed Returns with LIC Policies",
+    description: "In-depth articles on LIC saving and investment plans with guaranteed returns, long-term benefits, and maturity calculations.",
+    keywords: ["lic saving plan", "lic investment plan", "guaranteed return lic", "best lic saving plan"]
   },
   { 
-    name: "Couple Lifestyle",
-    slug: "couple-lifestyle",
-    title: "Couple Lifestyle – Romantic Ideas & Healthy Relationship Habits",
-    description: "Couple habits, romantic activities, lifestyle routines, and ideas to improve bonding with your partner.",
-    keywords: ["couple lifestyle", "relationship goals", "romantic ideas", "couple habits", "happy relationship tips"]
+    name: "Child Education Plans",
+    slug: "child-education-plans",
+    title: "Child Education Plans – Secure Your Child’s Future with LIC",
+    description: "Guides on LIC child plans for education, marriage, and long-term financial security with premium waiver benefits.",
+    keywords: ["lic child plan", "child education plan lic", "best child policy lic", "lic child future plan"]
   },
   { 
-    name: "Shayari & Quotes",
-    slug: "shayari-quotes",
-    title: "Love Shayari & Quotes – Heart Touching Romantic Lines",
-    description: "Beautiful love shayari, emotional quotes, and message-worthy lines for partners and lovers.",
-    keywords: ["love shayari", "romantic quotes", "heart touching lines", "best shayari", "love text"]
+    name: "Retirement & Pension Plans",
+    slug: "retirement-pension-plans",
+    title: "Retirement & Pension Plans – LIC Annuity & Lifetime Income",
+    description: "LIC pension plans with annuity options, retirement income solutions, and senior citizen benefits explained in detail.",
+    keywords: ["lic pension plan", "lic retirement plan", "annuity plan lic", "senior citizen lic plan"]
   },
   { 
-    name: "Communication & Trust",
-    slug: "communication-trust",
-    title: "Communication & Trust – Fix Misunderstandings & Build Bond",
-    description: "Guides on improving communication, handling misunderstandings, and building trust in relationships.",
-    keywords: ["trust issues", "how to communicate better", "relationship trust", "misunderstanding solutions"]
+    name: "LIC Health Insurance",
+    slug: "lic-health-insurance",
+    title: "LIC Health Insurance – Hospital Cash, Critical Illness & Benefits",
+    description: "LIC health insurance guides covering hospital cash benefit, medical cover, and family health protection plans.",
+    keywords: ["lic health insurance", "lic health plan", "lic medical policy", "health cover lic"]
   },
   { 
-    name: "Long Distance Love",
-    slug: "long-distance-love",
-    title: "Long Distance Love – Tips to Maintain Long Distance Relationships",
-    description: "Practical tips, emotional support, and bonding strategies for long distance couples.",
-    keywords: ["long distance relationship tips", "ldr advice", "ldr trust", "maintain long distance love"]
+    name: "LIC Agent & Career",
+    slug: "lic-agent-career",
+    title: "LIC Agent & Career – Joining Process, Commission & Growth",
+    description: "Articles and guides on becoming an LIC agent, income potential, recruitment process, and career opportunities.",
+    keywords: ["lic agent join", "become lic agent", "lic agent commission", "lic agent career"]
   },
   { 
-    name: "Self Love & Personal Growth",
-    slug: "self-love-growth",
-    title: "Self Love & Personal Growth – Build Confidence & Emotional Strength",
-    description: "Self-development guides, emotional strength building, and confidence tips to improve relationships and life.",
-    keywords: ["self love tips", "confidence building", "mental growth", "self improvement", "emotional strength"]
+    name: "Insurance & Finance Knowledge",
+    slug: "insurance-finance-knowledge",
+    title: "Insurance & Finance Knowledge – Basics, Tax Benefits & Smart Tips",
+    description: "Educational articles about insurance basics, premium calculation, tax benefits, financial planning and policy awareness.",
+    keywords: ["insurance knowledge", "insurance basics", "lic tax benefits", "insurance tips", "premium calculator info"]
   }
 ];
 
+
 export const tagsSeed = [
   { 
-    name: "Love",
-    slug: "love",
-    title: "Love – Meaning, Emotions & Real Relationship Experiences",
-    description: "Blogs about love, emotions, bonding, understanding your partner, and building meaningful relationships.",
-    keywords: ["love", "love meaning", "love feelings", "love bonding", "love emotions"]
+    name: "LIC Plans",
+    slug: "lic-plans",
+    title: "LIC Plans – Latest Plan Details & Benefits",
+    description: "Quick insights and detailed articles on LIC’s latest plans including features, benefits and premium details.",
+    keywords: ["lic plans", "lic plan list", "new lic plans", "best lic plans"]
   },
   { 
-    name: "Trust",
-    slug: "trust",
-    title: "Trust – Build & Fix Trust in Relationships",
-    description: "Guides on trust building, handling insecurity, reducing misunderstandings, and improving relationship stability.",
-    keywords: ["trust issues", "relationship trust", "build trust", "fix trust", "trust problems"]
+    name: "Premium Calculator",
+    slug: "premium-calculator",
+    title: "Premium Calculator – Calculate LIC Premium Easily",
+    description: "Guides and tools to calculate LIC policy premium, maturity, and tax saving based on plan and age.",
+    keywords: ["lic premium calculator", "premium calculator lic", "lic online calculator"]
   },
   { 
-    name: "Communication",
-    slug: "communication",
-    title: "Communication – Improve Talks & Reduce Misunderstandings",
-    description: "Communication techniques, conflict resolution guides, and tips to have healthy conversations with your partner.",
-    keywords: ["communication tips", "relationship communication", "talk to partner", "avoid misunderstandings"]
+    name: "LIC Agent",
+    slug: "lic-agent",
+    title: "LIC Agent – Commission, Income & Registration Guide",
+    description: "Articles related to LIC agent recruitment, commission chart, earnings, and agent success tips.",
+    keywords: ["lic agent", "lic agent commission", "lic agent income"]
   },
   { 
-    name: "Breakup",
-    slug: "breakup",
-    title: "Breakup – Healing, Moving On & Emotional Recovery",
-    description: "Breakup advice, emotional healing, moving on steps, and ways to rebuild your confidence after heartbreak.",
-    keywords: ["breakup healing", "move on", "breakup tips", "heartbreak recovery"]
+    name: "Tax Benefits",
+    slug: "tax-benefits",
+    title: "Tax Benefits – Save Tax Using LIC Policies",
+    description: "LIC tax saving guides under Section 80C, 10(10D), and tips to get maximum tax exemption.",
+    keywords: ["lic tax benefits", "tax saving lic", "80c lic policy", "tax deduction lic"]
   },
   { 
-    name: "Healing",
-    slug: "healing",
-    title: "Healing – Emotional Recovery & Self-Growth",
-    description: "Content on emotional healing, self-growth, forgiveness, mental strength, and rebuilding your inner peace.",
-    keywords: ["healing tips", "emotional healing", "self growth", "stress recovery"]
+    name: "Maturity Benefits",
+    slug: "maturity-benefits",
+    title: "Maturity Benefits – LIC Maturity Calculation & Bonus",
+    description: "All about LIC maturity calculations, bonus rates, and policy-wise returns explained.",
+    keywords: ["lic maturity", "lic maturity benefits", "lic bonus", "maturity calculator lic"]
   },
   { 
-    name: "First Date",
-    slug: "first-date",
-    title: "First Date – Tips, Ideas & Attraction Psychology",
-    description: "First date ideas, attraction psychology, what to talk about, and how to make a strong first impression.",
-    keywords: ["first date tips", "first date ideas", "impress on first date", "dating psychology"]
+    name: "Term Plan",
+    slug: "term-plan",
+    title: "Term Plan – Affordable Life Cover with LIC",
+    description: "LIC term plan articles with coverage details, premium charts and claim information.",
+    keywords: ["lic term plan", "best lic term insurance", "lic life cover"]
   },
   { 
-    name: "Flirting",
-    slug: "flirting",
-    title: "Flirting – Cute, Funny & Smooth Ways to Flirt",
-    description: "Flirting tips, texting ideas, attraction-building techniques, and natural ways to create chemistry.",
-    keywords: ["flirting tips", "how to flirt", "flirting messages", "cute flirting"]
+    name: "Child Policy",
+    slug: "child-policy",
+    title: "Child Policy – LIC Plans for Child Future & Education",
+    description: "Guides on the best LIC child policies for education, saving and long-term financial planning.",
+    keywords: ["lic child policy", "child policy lic", "child plan education lic"]
   },
   { 
-    name: "Long Distance",
-    slug: "long-distance",
-    title: "Long Distance – Maintain Love & Trust From Miles Away",
-    description: "Long distance relationship tips, trust building, communication ideas, and emotional support guides.",
-    keywords: ["long distance relationship tips", "ldr trust", "ldr communication", "maintain long distance love"]
+    name: "Pension Plan",
+    slug: "pension-plan",
+    title: "Pension Plan – LIC Retirement & Monthly Income Plans",
+    description: "LIC pension and annuity plans for secure retirement with monthly or yearly income.",
+    keywords: ["lic pension plan", "lic retirement plan", "pension income lic"]
   },
   { 
-    name: "Self Love",
-    slug: "self-love",
-    title: "Self Love – Confidence, Self-Respect & Inner Peace",
-    description: "Self-love guides, confidence building, emotional strength, and improving your self-worth.",
-    keywords: ["self love tips", "self confidence", "self respect", "mental strength"]
+    name: "Health Plan",
+    slug: "health-plan",
+    title: "Health Plan – LIC Medical & Health Coverage",
+    description: "LIC’s hospital cash, critical illness and medical coverage plans explained.",
+    keywords: ["lic health plan", "lic health policy", "medical insurance lic"]
   },
   { 
-    name: "Quotes",
-    slug: "quotes",
-    title: "Quotes – Love, Life & Emotional Relationship Quotes",
-    description: "Beautiful relationship quotes, love messages, emotional lines, and shareable text for partners.",
-    keywords: ["love quotes", "relationship quotes", "emotional quotes", "romantic lines"]
+    name: "Insurance Tips",
+    slug: "insurance-tips",
+    title: "Insurance Tips – Smart Guides for Buying LIC Policies",
+    description: "Quick and helpful tips for choosing the right LIC policy, saving tax, and maximizing benefits.",
+    keywords: ["lic tips", "insurance tips", "lic buying guide"]
   }
 ];
+
 
 

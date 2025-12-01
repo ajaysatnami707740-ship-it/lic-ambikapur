@@ -5,7 +5,7 @@ import DOMPurify from "dompurify";
 
 export const dynamic = "force-dynamic";
 
-// Generate dynamic metadata for SEO
+// Dynamic SEO metadata
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   let post = null;
@@ -24,14 +24,14 @@ export async function generateMetadata({ params }) {
     post.metaDescription ||
     post.excerpt ||
     post.categories?.[0]?.description ||
-    "Read this informative post about love, relationships, and personal stories.";
+    "Get detailed insights and guidance on LIC policies and financial planning.";
 
   const metaKeywords =
     post.metaKeywords?.join(", ") ||
     post.tags?.map((t) => t.name).join(", ") ||
     post.categories?.map((c) => c.name).join(", ");
 
-  const canonicalUrl = `https://truefeelings.in/blog/${post.slug}`;
+  const canonicalUrl = `https://licambikapur.com/blog/${post.slug}`;
 
   return {
     title: metaTitle,
@@ -64,17 +64,14 @@ export async function generateMetadata({ params }) {
 
 export default async function SinglePostPage({ params }) {
   const { slug } = await params;
-
   let post = null;
 
   try {
     const res = await apiRequest(`${process.env.NEXT_PUBLIC_API_URL}/api/posts/slug/${slug}`);
     post = res.data;
-    console.log(post.content)
   } catch (error) {
     console.error("Failed to fetch post:", error);
   }
-//   const safeContent = DOMPurify.sanitize(post.content);
 
   if (!post) {
     return (
@@ -85,7 +82,7 @@ export default async function SinglePostPage({ params }) {
   }
 
   return (
-    <article className="min-h-screen bg-gradient-to-b from-rose-50 via-pink-50 to-purple-50 pb-20">
+    <article className="min-h-screen bg-gradient-to-b from-[#f3f7fd] via-[#e8f0fb] to-[#dbe8f7] pb-20">
 
       {/* HEADER BANNER */}
       <section className="relative w-full h-[55vh] rounded-b-3xl overflow-hidden shadow-xl">
@@ -94,16 +91,16 @@ export default async function SinglePostPage({ params }) {
           alt={post.title}
           fill
           priority
-          className="object-cover object-center brightness-[0.8]"
+          className="object-cover object-center brightness-[0.85]"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
 
         <div className="absolute bottom-14 left-1/2 -translate-x-1/2 w-full max-w-5xl px-6 text-center">
           <h1 className="text-xl sm:text-5xl font-extrabold text-white leading-tight drop-shadow-2xl">
             {post.title}
           </h1>
-          <p className="text-rose-100 mt-3 text-sm">
+          <p className="text-gray-200 mt-3 text-sm">
             {new Date(post.createdAt).toLocaleDateString()} • {post.readTime || 3} min read
           </p>
         </div>
@@ -111,23 +108,24 @@ export default async function SinglePostPage({ params }) {
 
       {/* CONTENT */}
       <div className="max-w-4xl mx-auto px-0 sm:px-8 -mt-12">
-        <div className="bg-white border border-rose-100 shadow-2xl rounded-3xl py-4 sm:p-12">
+        <div className="bg-white border border-blue-100 shadow-2xl rounded-3xl py-4 sm:p-12">
 
           {/* Categories */}
           <div className="flex flex-wrap px-2 gap-2 mb-6 pt-8">
             {post.categories?.map((cat) => (
-              <span
+              <Link
                 key={cat._id}
-                className="px-3 py-1 text-xs rounded-full bg-rose-100 text-rose-700 font-medium"
+                href={`/category/${cat.slug}`}
+                className="px-3 py-1 text-xs rounded-full bg-blue-100 text-blue-700 font-medium hover:bg-blue-200 transition"
               >
                 {cat.name}
-              </span>
+              </Link>
             ))}
           </div>
 
           {/* Excerpt */}
           {post.excerpt && (
-            <p className="text-lg px-2 text-gray-700 italic border-l-4 border-rose-300 pl-5 mb-10">
+            <p className="text-lg px-2 text-gray-700 italic border-l-4 border-blue-300 pl-5 mb-10">
               {post.excerpt}
             </p>
           )}
@@ -139,7 +137,7 @@ export default async function SinglePostPage({ params }) {
               prose-p:text-gray-800
               prose-li:text-gray-800
               prose-headings:text-gray-900
-              prose-a:text-rose-600 prose-a:no-underline hover:prose-a:underline
+              prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
               prose-img:rounded-xl prose-img:shadow-md
             "
             dangerouslySetInnerHTML={{ __html: post.content }}
@@ -154,7 +152,7 @@ export default async function SinglePostPage({ params }) {
                   <Link
                     key={tag._id}
                     href={`/tag/${tag.slug}`}
-                    className="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-700 hover:bg-purple-200 transition"
+                    className="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-700 hover:bg-blue-200 transition"
                   >
                     #{tag.name}
                   </Link>
@@ -169,7 +167,7 @@ export default async function SinglePostPage({ params }) {
           <Link
             href="/blog"
             className="inline-block px-7 py-3 rounded-lg bg-gradient-to-r 
-              from-rose-500 to-fuchsia-600 text-white font-semibold shadow-lg 
+              from-blue-500 to-blue-700 text-white font-semibold shadow-lg 
               hover:shadow-xl active:scale-95 transition-all"
           >
             ← Back to Blogs

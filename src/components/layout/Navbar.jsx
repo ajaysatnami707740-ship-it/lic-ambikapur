@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/95 backdrop-blur-sm shadow-md py-3" : "bg-transparent py-5"
+        scrolled ? "bg-white/95 backdrop-blur-sm shadow-md py-3" : "bg-gradient-to-br from-[#003399]/10 via-[#FED700]/20 to-white py-[1.2rem]"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">

@@ -2,11 +2,12 @@ import { connectDB } from "@/lib/db";
 import Post from "@/models/Post";
 import Category from "@/models/Category";
 import Tag from "@/models/Tag";
+import sanitizeHtml from "sanitize-html";
 import { createSlug } from "@/utils/createSlug";
 import { calculateReadTime } from "@/utils/readTime";
-import sanitizeHtml from "sanitize-html";
 import { requireAdmin } from "@/lib/protectRoute";
-import { deleteImage } from "@/lib/cloudinary"; // if you store public_id
+import { deleteImage } from "@/lib/cloudinary";
+
 
 export async function GET(req, { params }) {
   try {

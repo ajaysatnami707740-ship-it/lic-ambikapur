@@ -131,5 +131,47 @@ export const tagsSeed = [
   }
 ];
 
+export const imagesLink = [
+  'https://res.cloudinary.com/dnq42wt3a/image/upload/v1765365654/posts/rsrmkfkdgwpifb2jpatr.png',
+  'https://res.cloudinary.com/dnq42wt3a/image/upload/v1765365529/posts/pzzfewyorxxrfbcinqtl.jpg',
+  'https://res.cloudinary.com/dnq42wt3a/image/upload/v1765365570/posts/lig5px6aw2ipqbgvziog.jpg',
+  'https://res.cloudinary.com/dnq42wt3a/image/upload/v1765365598/posts/fpy5zebbfxs9x6kfylih.png',
+  'https://res.cloudinary.com/dnq42wt3a/image/upload/v1765365625/posts/cjxnkirmigttxmmmqwkd.jpg',
+]
+
+
+export const carouselContent = [
+  {
+    title: "Join Bima Sakhi – LIC Women Agent Opportunity",
+    desc: "Self-earning ka best मौका! LIC Bima Sakhi बनकर अपने शहर की महिलाओं को financial सुरक्षा दें.",
+    cta: "Apply as Bima Sakhi",
+    link: "/bima-sakhi-apply",
+  },
+  {
+    title: "Start Your LIC Agent Career – Unlimited Income Growth",
+    desc: "Flexible काम, high earning और long-term career stability. LIC Agent बनकर अपना भविष्य secure करो!",
+    cta: "Become an LIC Agent",
+    link: "/become-lic-agent",
+  },
+  {
+    title: "Free LIC Policy Guidance – Choose the Best Plan",
+    desc: "मैं Ajay Satnami, आपकी जरूरत के हिसाब से सही LIC policy चुनने में मदद करता हूँ।",
+    cta: "Get Free Consultation",
+    link: "/contact",
+  },
+  {
+    title: "Full Support from LIC Development Office",
+    desc: "Agent training, marketing support और sales guidance — सब कुछ एक जगह.",
+    cta: "Explore Benefits",
+    link: "/development-office",
+  },
+  {
+    title: "LIC Plans for Family Security & Wealth Building",
+    desc: "Life cover + saving + guaranteed returns. Apne परिवार का future आज ही सुरक्षित करें.",
+    cta: "View LIC Plans",
+    link: "/lic-plans",
+  },
+];
+
 
 

@@ -55,7 +55,7 @@ export default function Hero() {
 
           {/* Trust Indicator */}
           <div className="mt-8 text-gray-600 text-sm sm:text-base">
-            ⭐ Trusted LIC Consultant in <strong>Ambikapur</strong> with 4–5 years of experience
+            ⭐ Trusted LIC Development Officer in <strong>Ambikapur</strong> with 4–5 years of experience
           </div>
         </div>
 

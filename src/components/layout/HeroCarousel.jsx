@@ -61,7 +61,7 @@ export default function HeroCarousel({ images, contents }) {
                     text-white 
                     font-bold 
                     drop-shadow-lg
-                    text-xl 
+                    text-sm 
                     leading-snug
                     sm:text-3xl sm:leading-tight
                     md:text-4xl

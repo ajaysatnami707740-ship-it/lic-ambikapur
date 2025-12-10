@@ -115,7 +115,7 @@ export default function TestimonialsCarousel() {
               key={i}
               className="
                 flex-shrink-0 
-                w-[60%] sm:w-[45%] lg:w-[22%]
+                w-[90%] sm:w-[45%] lg:w-[22%]
                 bg-white
                 p-5 
                 rounded-xl 

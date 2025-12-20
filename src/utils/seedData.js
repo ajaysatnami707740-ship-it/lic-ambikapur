@@ -145,31 +145,31 @@ export const carouselContent = [
     title: "Join Bima Sakhi – LIC Women Agent Opportunity",
     desc: "Self-earning ka best मौका! LIC Bima Sakhi बनकर अपने शहर की महिलाओं को financial सुरक्षा दें.",
     cta: "Apply as Bima Sakhi",
-    link: "/bima-sakhi-apply",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSex_Ai21O9OJ7C_08e4J4nYp8Ka30fAfBKzUuz5NuHZU2mnlA/viewform?usp=dialog",
   },
   {
     title: "Start Your LIC Agent Career – Unlimited Income Growth",
     desc: "Flexible काम, high earning और long-term career stability. LIC Agent बनकर अपना भविष्य secure करो!",
     cta: "Become an LIC Agent",
-    link: "/become-lic-agent",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSex_Ai21O9OJ7C_08e4J4nYp8Ka30fAfBKzUuz5NuHZU2mnlA/viewform?usp=dialog",
   },
   {
     title: "Free LIC Policy Guidance – Choose the Best Plan",
     desc: "मैं Ajay Satnami, आपकी जरूरत के हिसाब से सही LIC policy चुनने में मदद करता हूँ।",
     cta: "Get Free Consultation",
-    link: "/contact",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSex_Ai21O9OJ7C_08e4J4nYp8Ka30fAfBKzUuz5NuHZU2mnlA/viewform?usp=dialog",
   },
   {
     title: "Full Support from LIC Development Office",
     desc: "Agent training, marketing support और sales guidance — सब कुछ एक जगह.",
     cta: "Explore Benefits",
-    link: "/development-office",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSex_Ai21O9OJ7C_08e4J4nYp8Ka30fAfBKzUuz5NuHZU2mnlA/viewform?usp=dialog",
   },
   {
     title: "LIC Plans for Family Security & Wealth Building",
     desc: "Life cover + saving + guaranteed returns. Apne परिवार का future आज ही सुरक्षित करें.",
     cta: "View LIC Plans",
-    link: "/lic-plans",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSex_Ai21O9OJ7C_08e4J4nYp8Ka30fAfBKzUuz5NuHZU2mnlA/viewform?usp=dialog",
   },
 ];
 

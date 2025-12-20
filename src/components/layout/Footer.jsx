@@ -46,26 +46,37 @@ export default function Footer() {
           <div className="text-center">
             <h4 className="text-xl font-semibold text-blue-700 mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {categoriesSeed.slice(0, 4).map((cat, idx) => (
-                <li key={idx}>
+               <li>
                   <Link
-                    href={`/category/${cat.slug}`}
+                    href="https://enach.licindia.in/nachproposalclient/" target="_blank"
                     className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
-                  >
-                    {cat.name}
-                  </Link>
+                  > E-NACH - To Activate One Mly Premium</Link>
                 </li>
-              ))}
-              {tagsSeed.slice(0, 4).map((tag, idx) => (
-                <li key={idx}>
+                <li>
                   <Link
-                    href={`/tag/${tag.slug}`}
+                    href="https://enach.licindia.in/LICNACHClient/" target="_blank"
                     className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
-                  >
-                    {tag.name}
-                  </Link>
+                  > E-NACH Registration</Link>
                 </li>
-              ))}
+                <li>
+                  <Link
+                    href="https://esales.licindia.in/pages/login-page" target="_blank"
+                    className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
+                  >Ananda App (Web Version)</Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://dexitexams.com/OnlinePayment/paymentRequest.jsp" target="_blank"
+                    className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
+                  >URN Payment</Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://www.iiiexams.org/Candidates/Hallticket" target="_blank"
+                    className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
+                  >Agent Hall ticket</Link>
+                </li>
+
             </ul>
           </div>
 
@@ -73,18 +84,18 @@ export default function Footer() {
           <div className="text-center md:text-right">
             <h4 className="text-xl font-semibold text-blue-700 mb-4">Contact</h4>
             <div className="flex justify-center md:justify-end gap-4 mb-4">
-              <Link href="https://facebook.com" target="_blank" className="text-blue-900 hover:text-blue-600 transition-colors duration-200">
+              <Link href="https://www.facebook.com/share/1cAuQRoZ8N/" target="_blank" className="text-blue-900 hover:text-blue-600 transition-colors duration-200">
                 <Facebook className="w-6 h-6" />
               </Link>
-              <Link href="https://twitter.com" target="_blank" className="text-blue-900 hover:text-blue-600 transition-colors duration-200">
+              {/* <Link href="https://twitter.com" target="_blank" className="text-blue-900 hover:text-blue-600 transition-colors duration-200">
                 <Twitter className="w-6 h-6" />
-              </Link>
-              <Link href="https://instagram.com" target="_blank" className="text-blue-900 hover:text-blue-600 transition-colors duration-200">
+              </Link> */}
+              <Link href="https://www.instagram.com/lic_a2z?igsh=c2pnY2IycTRleGUx" target="_blank" className="text-blue-900 hover:text-blue-600 transition-colors duration-200">
                 <Instagram className="w-6 h-6" />
               </Link>
-              <Link href="https://linkedin.com" target="_blank" className="text-blue-900 hover:text-blue-600 transition-colors duration-200">
+              {/* <Link href="https://linkedin.com" target="_blank" className="text-blue-900 hover:text-blue-600 transition-colors duration-200">
                 <Linkedin className="w-6 h-6" />
-              </Link>
+              </Link> */}
             </div>
             <div className="flex flex-col md:items-end items-center text-blue-900 space-y-1">
               <Link href="tel:7000841676" className="flex items-center gap-2 hover:text-blue-600 transition-colors duration-200">

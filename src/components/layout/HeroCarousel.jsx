@@ -87,6 +87,7 @@ export default function HeroCarousel({ images, contents }) {
                 {/* CTA BUTTON */}
                 <a
                   href={contents[i].link}
+                  target="_blank"
                   className="
                     mt-4 
                     px-4 py-2 

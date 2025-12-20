@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const menuItems = [
     { name: "Home", slug: "/" },
-    { name: "LIC Plans", slug: "/lic-plans" },
+    { name: "LIC Plans", slug: "/tag/maturity-benefits" },
     { name: "Blogs", slug: "/blog" },
   ];
 
@@ -74,7 +74,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href={`tel:${PHONE}`}
+            href='https://docs.google.com/forms/d/e/1FAIpQLSex_Ai21O9OJ7C_08e4J4nYp8Ka30fAfBKzUuz5NuHZU2mnlA/viewform?usp=dialog' target="_blank"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-gradient-to-r from-[#6F78A0] to-[#596190] text-white font-semibold shadow hover:scale-105 transition-transform duration-200"
           >
             <UserCheck className="w-4 h-4" /> Become Agent

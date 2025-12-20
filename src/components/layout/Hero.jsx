@@ -60,9 +60,9 @@ export default function Hero() {
         </div>
 
         {/* RIGHT SIDE IMAGE */}
-        <div className="md:w-1/2 flex justify-center md:justify-end">
+        <div className="md:w-1/2 flex justify-center md:justify-center">
           <Image
-            src="https://res.cloudinary.com/dnq42wt3a/image/upload/v1764595146/posts/wm5soduwp2pipp4jxwux.png"
+            src="https://res.cloudinary.com/dnq42wt3a/image/upload/v1766249657/posts/wzjjrfopg04bxipjtcut.png"
             alt="LIC Development Officer Ajay Satnami"
             width={580}
             height={580}

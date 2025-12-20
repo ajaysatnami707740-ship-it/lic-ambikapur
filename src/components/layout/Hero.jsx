@@ -15,20 +15,25 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
-            Your Trusted LIC Advisor in{" "}
+            Your Trusted LIC <span className="bg-gradient-to-r from-[#b6bdca] to-[#a11678] bg-clip-text text-transparent"> Development Officer </span> In{" "}
             <span className="bg-gradient-to-r from-[#003399] to-[#FED700] bg-clip-text text-transparent">
               Ambikapur
             </span>
           </h1>
 
           {/* Subtext */}
+         <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-8">
+              I am <strong>Ajay Satnami</strong>, and with the mission of securing a better future,
+              I provide proper guidance, <strong>practical training</strong> and
+              <strong> personal mentorship</strong> to many <strong>LIC agents</strong>,
+              helping them build a successful and stable career.
+            </p>
+
+
           <p className="text-lg sm:text-xl text-gray-700 leading-relaxed mb-8">
-            I am <strong>Ajay Satnami</strong>, Development Officer (LIC), Ambikapur.  
-            Get expert assistance for{" "}
-            <strong>LIC policy guidance</strong>,{" "}
-            <strong>financial planning</strong>,{" "}
-            <strong>tax-saving solutions</strong>, and{" "}
-            <strong>secure investment options</strong> for your future.
+            मैं <strong>अजय सतनामी</strong> हूँ, और भविष्य को सुरक्षित बनाने के मिशन के साथ
+            अनेक <strong>LIC अभिकर्ताओं</strong> को सही दिशा, व्यावहारिक प्रशिक्षण
+            और व्यक्तिगत मार्गदर्शन प्रदान करता हूँ, ताकि वे एक सफल और स्थिर करियर बना सकें।
           </p>
 
           {/* CTA BUTTONS */}

@@ -19,6 +19,7 @@ const Navbar = () => {
   const menuItems = [
     { name: "Home", slug: "/" },
     { name: "LIC Plans", slug: "/tag/maturity-benefits" },
+    { name: "LIC Agents", slug: "/agents" },
     { name: "Blogs", slug: "/blog" },
   ];
 

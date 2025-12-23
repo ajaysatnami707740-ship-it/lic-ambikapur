@@ -7,12 +7,19 @@ export const revalidate = 0;
 export const fetchCache = "force-no-store";
 
 // Per-tag image mapping
-const tagImages = {
-  love: "https://thumbs.dreamstime.com/b/romantic-valentine-couple-under-blossom-flowers-trees-love-watercolour-painting-illustration-361917816.jpg",
-  romance: "https://thumbs.dreamstime.com/b/romantic-valentine-couple-under-blossom-flowers-trees-love-watercolour-painting-illustration-361917816.jpg",
-  relationship: "https://thumbs.dreamstime.com/b/romantic-valentine-couple-under-blossom-flowers-trees-love-watercolour-painting-illustration-361917816.jpg",
-  breakup: "https://thumbs.dreamstime.com/b/romantic-valentine-couple-under-blossom-flowers-trees-love-watercolour-painting-illustration-361917816.jpg",
-};
+const tagImages = [
+  "https://res.cloudinary.com/dnq42wt3a/image/upload/v1766470667/posts/qpvxfjkyb4sgbrififlc.png",
+  "https://res.cloudinary.com/dnq42wt3a/image/upload/v1766470715/posts/jf9vpocm0plrjm1bl7ei.png",
+  "https://res.cloudinary.com/dnq42wt3a/image/upload/v1766470752/posts/w3bv29qbokaso5ippkuv.png",
+  "https://res.cloudinary.com/dnq42wt3a/image/upload/v1766470784/posts/aabozgsmpx4n6rhycsie.png",
+  "https://res.cloudinary.com/dnq42wt3a/image/upload/v1766470848/posts/imqldwlpqlhnffi2fkqr.png",
+  "https://res.cloudinary.com/dnq42wt3a/image/upload/v1766470880/posts/mmyfrbjnt2iuizp5ntqt.png",
+  "https://res.cloudinary.com/dnq42wt3a/image/upload/v1766470910/posts/opcwygtwxvhzsl6cnuv9.png",
+  "https://res.cloudinary.com/dnq42wt3a/image/upload/v1766470667/posts/qpvxfjkyb4sgbrififlc.png",
+  "https://res.cloudinary.com/dnq42wt3a/image/upload/v1766470715/posts/jf9vpocm0plrjm1bl7ei.png",
+  "https://res.cloudinary.com/dnq42wt3a/image/upload/v1766470752/posts/w3bv29qbokaso5ippkuv.png",
+ 
+];
 
 export default async function TagsSection() {
   let tags = [];
@@ -36,7 +43,7 @@ export default async function TagsSection() {
         </h2>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {tags.map((tag) => {
+          {tags.map((tag, i) => {
             const imgSrc =
               tagImages[tag.slug] ||
               tag.coverImage ||
@@ -51,15 +58,14 @@ export default async function TagsSection() {
                 {/* IMAGE */}
                 <div className="relative h-48 w-full overflow-hidden">
                   <Image
-                    src="https://res.cloudinary.com/dnq42wt3a/image/upload/v1764596523/posts/yalctyfrdq52dxvhle5v.jpg"
-                    alt={tag.name}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw,
-                           (max-width: 1200px) 50vw,
-                           25vw"
-                    priority={tag.slug === "love"}
-                  />
+          src={tagImages[i]}
+          alt="tag_images"
+          fill
+          className="object-cover group-hover:scale-110 transition-transform duration-500"
+          sizes="(max-width: 768px) 100vw,
+                 (max-width: 1200px) 50vw,
+                 25vw"
+        />
                 </div>
 
                 {/* GRADIENT CONTENT */}

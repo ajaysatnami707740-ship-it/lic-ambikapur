@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, MessageCircle, UserCheck } from "lucide-react";
+import Image from "next/image";
 
 const PHONE = "+917000841676";
 const WA_LINK = `https://wa.me/917000841676`;
@@ -39,9 +40,17 @@ const Navbar = () => {
           <div
             aria-hidden
             className="w-10 h-10 rounded-md flex items-center justify-center shadow-sm"
-            style={{ background: "#E8B44C" }}
+            // style={{ background: "#E8B44C" }}
           >
-            <span className="text-sm font-bold text-white">AS</span>
+            <span className="text-sm font-bold text-white">
+                     <Image
+                        src="https://res.cloudinary.com/dnq42wt3a/image/upload/v1766468924/posts/vjsdh5kjuuwxqadevvlo.png"
+                        alt="LIC Development LOGO"
+                        width={100}
+                        height={100}
+                        priority
+                        className=""
+                      /></span>
           </div>
           <div className="leading-tight">
             <div className="text-lg font-semibold text-[#1A1A1A]">Lic Ambikapur</div>

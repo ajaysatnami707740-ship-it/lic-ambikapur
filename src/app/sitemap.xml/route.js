@@ -23,6 +23,7 @@ export async function GET() {
       `${baseUrl}/login`,
       `${baseUrl}/sign-up`,
       `${baseUrl}/blog`,
+      `${baseUrl}/agents`,
     ];
 
     // Add dynamic routes

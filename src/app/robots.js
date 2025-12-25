@@ -8,6 +8,6 @@ export default function robots() {
         disallow: ["/admin/", "/login", "/sign-up"],
       },
     ],
-    sitemap: "https://truefeelings.in/sitemap.xml",
+    sitemap: "https://licambikapur.com/sitemap.xml",
   };
 }

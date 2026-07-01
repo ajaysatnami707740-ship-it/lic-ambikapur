@@ -60,9 +60,9 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="https://esales.licindia.in/pages/login-page" target="_blank"
+                    href="https://nav-ananda.licindia.in/" target="_blank"
                     className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
-                  >Ananda App (Web Version)</Link>
+                  >Nav Ananda App (Web Version)</Link>
                 </li>
                 <li>
                   <Link

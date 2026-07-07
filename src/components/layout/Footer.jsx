@@ -48,17 +48,11 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                   <Link
-                    href="https://ebiz.licindia.in/D2CPM/#directpay/loaninterestpayment/LoanInterestPaymentLanding" target="_blank"
+                    href="https://nav-ananda.licindia.in/" target="_blank"
                     className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
-                  > Repay Loan Intrest</Link>
+                  >Nav Ananda App (Web Version)</Link>
                 </li>
               <li>
-                  <Link
-                    href="https://ebiz.licindia.in/D2CPM/#directpay/Premium/PremiumLanding" target="_blank"
-                    className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
-                  > LIC Premium Payment</Link>
-                </li>
-               <li>
                   <Link
                     href="https://enach.licindia.in/nachproposalclient/" target="_blank"
                     className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
@@ -70,12 +64,22 @@ export default function Footer() {
                     className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
                   > E-NACH Registration</Link>
                 </li>
-                <li>
+              <li>
                   <Link
-                    href="https://nav-ananda.licindia.in/" target="_blank"
+                    href="https://ebiz.licindia.in/D2CPM/#directpay/Premium/PremiumLanding" target="_blank"
                     className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
-                  >Nav Ananda App (Web Version)</Link>
+                  > LIC Premium Payment</Link>
                 </li>
+              <li>
+                  <Link
+                    href="https://ebiz.licindia.in/D2CPM/#directpay/loaninterestpayment/LoanInterestPaymentLanding" target="_blank"
+                    className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
+                  > Repay Loan Intrest</Link>
+                </li>
+              
+               
+              
+                
                 <li>
                   <Link
                     href="https://dexitexams.com/OnlinePayment/paymentRequest.jsp" target="_blank"

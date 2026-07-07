@@ -46,6 +46,12 @@ export default function Footer() {
           <div className="text-center">
             <h4 className="text-xl font-semibold text-blue-700 mb-4">Quick Links</h4>
             <ul className="space-y-2">
+              <li>
+                  <Link
+                    href="https://ebiz.licindia.in/D2CPM/#directpay/Premium/PremiumLanding" target="_blank"
+                    className="text-blue-900 hover:text-blue-600 transition-colors duration-200"
+                  > LIC Premium Payment</Link>
+                </li>
                <li>
                   <Link
                     href="https://enach.licindia.in/nachproposalclient/" target="_blank"
